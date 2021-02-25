@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Post} from "./post/post.component";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'PomoList';
+
+  posts: Post[] = [];
+
+  onAddPost(post: Post) {
+    this.posts.unshift(post);
+  }
+
 }

@@ -1,0 +1,42 @@
+.form {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+
+  .input {
+    margin: 10px 0;
+    border: none;
+    border-bottom: #333333;
+    border-bottom-style: solid;
+    font-size: 24px;
+    width: 520px;
+    text-align: center;
+
+    &:focus {
+      outline: none;
+      border-bottom: #ee2018;
+      color: #ee2018;
+      border-bottom-style: solid;
+    }
+  }
+
+  .btn {
+    background: #444444;
+    border: none;
+    color: #ffffff;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 30px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      background: #ee2018;
+    }
+  }
+
+}
